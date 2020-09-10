@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+.title_line{
+  border: solid 1px #ccc; display: inline-block;"
+  
+}  
+
+#rates {
+  text-align: left;
+}
+ul {
+  padding: 0px;
+
+}
+
+.main {
+  border: solid 1px #ccc; display: inline-block;"
+
+}
+#left {
+    width: 200px;
+    margin: 5px;
+}
+#center {
+    margin: 5px 0;
+    width: calc(800px);
+}
+#right {
+    margin: 5px;
+    width: 550px;
+}

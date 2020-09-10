@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Korean stock market</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="title_line" id="rates">
+      <ul style="list-style-type: none;">
+        <li>Bank of Korea Base Rate</li>
+        <!-- Base rate 보여주는 api 필요-->
+        <li>KRW / USD</li>
+        <!-- exchange rate api 필요-->
+        <li>KRW / EUR</li>
+        <!-- exchange rate api 필요-->
+        <!-- 하 시발 이거 왜 계속 사라지지 . 나중에 해결하자-->
+      </ul>
+    </div>
+
+    <div class="title_line" id="title">
+      <h1>Korean stock market</h1>
+      <!-- I wish I could show specifially only KST wherever the client is 
+			+hanging real time
+			it is not like that yet.-->
+      <p id="time_under_title">Date/Time: <span id="datetime"></span></p>
+      <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+      </script>
+    </div>
+
+    <div class="title_line" id="top_ad">
+      Here comes an ad
+    </div>
+    <div class="title_line" id="login">
+      login
+    </div>
+
+    <nav>
+      <div class="topnav">
+        <a class="active" href="#menu">Menu</a>
+        <input type="text" placeholder="Search.." />
+        <!--돋보기 그림 넣으셈-->search
+      </div>
+    </nav>
+    <div class="main" id="left">광고</div>
+    <div class="main" id="center">그래프</div>
+    <div class="main" id="right">주요주식</div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
